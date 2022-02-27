@@ -1,4 +1,16 @@
 import { renderBlock } from './lib.js';
+import { ISearchFormData } from './types/index.js';
+
+/**
+ * Функция выводит данные из формы
+ * @param inputValue данные из формы
+ */
+export const searchLog = (inputValue: ISearchFormData): void => {
+  console.log('city:', inputValue.city);
+  console.log('checkInDate:', inputValue.checkInDate);
+  console.log('checkOutDate:', inputValue.checkOutDate);
+  console.log('maxPrice:', inputValue.maxPrice);
+}
 
 export function renderSearchStubBlock() {
   renderBlock(

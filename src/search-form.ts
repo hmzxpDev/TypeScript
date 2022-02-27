@@ -48,7 +48,7 @@ export function renderSearchFormBlock(arrivalDate: string = defaultArrivalDate, 
           </div>
           <div>
             <label for="max-price">Макс. цена суток</label>
-            <input id="max-price" type="text" value="" name="price" class="max-price" />
+            <input id="max-price" type="number" value="" min="0" name="price" class="max-price" />
           </div>
           <div>
             <div><button>Найти</button></div>
@@ -58,4 +58,6 @@ export function renderSearchFormBlock(arrivalDate: string = defaultArrivalDate, 
     </form>
     `
   )
+
+
 }
